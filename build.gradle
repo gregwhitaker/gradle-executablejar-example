@@ -16,6 +16,15 @@ repositories {
 
 dependencies {
     implementation 'com.squareup.okhttp3:okhttp:4.2.2'
+    implementation 'org.slf4j:slf4j-api:1.7.29'
+    implementation 'org.slf4j:slf4j-simple:1.7.29'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.1'
 
     testImplementation 'junit:junit:4.12'
+}
+
+shadowJar {
+    archivesBaseName = 'example-shadow-app'     // Changing the name of the shadowed jar
+    classifier = ''                             // Removing the 'all' classifier from the shadowed jar name
+    version = ''                                // Removing the version from the shadowed jar name
 }
