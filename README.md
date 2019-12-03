@@ -4,6 +4,22 @@ An example of building an executable JAR with Gradle.
 ## Building the Example
 Run the following command to build the executable JAR:
 
+    ./gradlew shadowJar
+    
+## Running the Example
+Run the following commands to execute the shadowed JAR:
+
+    cd build/libs
+    java -jar example-shadow-app.jar
+    
+If successful, you will see something similar to the following in the console:
+
+    Loaded property from property file: this is a test property value
+    Response from HTTP endpoint: 531
+
+## Bugs and Feedback
+For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/gradle-executablejar-example/issues).
+
 ## License
 MIT License
 
