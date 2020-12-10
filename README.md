@@ -1,4 +1,6 @@
 # gradle-executablejar-example
+![Build](https://github.com/gregwhitaker/gradle-executablejar-example/workflows/Build/badge.svg)
+
 An example of building an executable JAR with Gradle.
 
 ## Building the Example
